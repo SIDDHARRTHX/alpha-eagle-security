@@ -20,30 +20,35 @@
     <!-- HEADER -->
     <header class="header">
 
-        <div class="container navbar">
+    <div class="container navbar">
 
-            <a href="#home" class="brand">
-                <img src="images/logo.png" alt="Alpha Eagle Security Logo">
+        <a href="#home" class="brand">
+            <img
+                src="images/logo.png"
+                alt="Alpha Eagle Security Logo"
+                class="logo"
+                id="logoImage"
+            >
 
-                <div>
-                    <h2>ALPHA EAGLE</h2>
-                    <span>SECURITY PVT. LTD.</span>
-                </div>
-            </a>
+            <div>
+                <h2>ALPHA EAGLE</h2>
+                <span>SECURITY PVT. LTD.</span>
+            </div>
+        </a>
 
-            <nav class="nav-links" id="navLinks">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#why-us">Why Us</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-            <button class="menu-btn" id="menuBtn">☰</button>
+        <button class="menu-btn" id="menuBtn">☰</button>
 
-        </div>
+    </div>
 
-    </header>
+</header>
 
 
     <!-- HOME -->
@@ -77,6 +82,107 @@
 </div>
 
     </section>
+    <!-- SECURITY GUARD SLIDESHOW -->
+<section class="guard-slideshow-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>OUR SECURITY PROFESSIONALS</p>
+            <h2>Security Guards You Can Trust</h2>
+        </div>
+
+        <div class="guard-slider">
+
+            <div class="guard-slides">
+
+                <!-- Guard 1 -->
+                <div class="guard-slide">
+                    <img src="./images/guard1.jpg" alt="Alpha Eagle Security Guard">
+
+                    <div class="guard-info">
+                        <span>01</span>
+                        <h3>Professional Security Guard</h3>
+                        <p>
+                            Trained and disciplined security personnel
+                            providing reliable protection for your premises.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Guard 2 -->
+                <div class="guard-slide">
+                    <img src="./images/guard2.png" alt="Alpha Eagle Security Guard">
+
+                    <div class="guard-info">
+                        <span>02</span>
+                        <h3>Hospital Security</h3>
+                        <p>
+                            Professional security support for hospitals,
+                            healthcare facilities and emergency areas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Guard 3 -->
+                <div class="guard-slide">
+                    <img src="./images/guard3.png" alt="Alpha Eagle Security Guard">
+
+                    <div class="guard-info">
+                        <span>03</span>
+                        <h3>School Security</h3>
+                        <p>
+                            Safe and secure environments for schools, students, staff and visitors.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Guard 4 -->
+                <div class="guard-slide">
+                    <img src="./images/guard4.png" alt="Alpha Eagle Security Guard">
+
+                    <div class="guard-info">
+                        <span>04</span>
+                        <h3>University Security</h3>
+                        <p>
+                            Professional security services for universities, hostels and educational institutions
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Guard 5 -->
+                <div class="guard-slide">
+                    <img src="./images/guard5.png" alt="Alpha Eagle Security Guard">
+
+                    <div class="guard-info">
+                        <span>05</span>
+                        <h3>CorporateSecurity</h3>
+                        <p>
+                            Dedicated security personnel for corporate offices, institutions and commercial establishments.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slider buttons -->
+            <button class="guard-prev" type="button">&#10094;</button>
+            <button class="guard-next" type="button">&#10095;</button>
+
+            <!-- Dots -->
+            <div class="guard-dots">
+                <span class="guard-dot active"></span>
+                <span class="guard-dot"></span>
+                <span class="guard-dot"></span>
+                <span class="guard-dot"></span>
+                <span class="guard-dot"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
     <!-- ABOUT -->
@@ -263,7 +369,7 @@
                 <h2>Get Security Assistance</h2>
             </div>
 
-            <div class="contact-grid">
+           <div class="contact-grid">
 
                 <div class="contact-info">
 
@@ -282,7 +388,7 @@
                     <div class="contact-item">
     <strong>💬 WhatsApp</strong>
     <span>
-        <a href="https://wa.me/917800047970" target="_blank">
+        <a href="https://wa.me/918601076399" target="_blank">
             Chat on WhatsApp
         </a>
     </span>
@@ -301,7 +407,7 @@
                 </div>
 
 
-                <form class="contact-form" id="whatsappForm">
+                 <form class="contact-form" id="whatsappForm">
 
                     <input type="text" id="name" placeholder="Your Name" required>
 
@@ -317,10 +423,24 @@
                     </button>
 
                 </form>
+               
+             <div class="office-location">
+    <h3>Office Location</h3>
+
+    <div class="map-container">
+       <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.3511949929903!2d81.86353441096556!3d25.459946020914725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acaa009dc5cb1%3A0x14908b730146988d!2sAlpha%20Eagle%20Security%20Pvt.Ltd!5e0!3m2!1sen!2sin!4v1785727486302!5m2!1sen!2sin"
+    width="100%"
+     height="300"
+     style="border:0; border-radius:15px;"
+     allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+    </div>
+</div>
 
             </div>
-
-        </div>
 
     </section>
 
@@ -336,16 +456,19 @@
             </div>
 
             <p>
-                © 2026 Alpha Eagle Security Pvt. Ltd. All Rights Reserved.
+                © 2026 Alpha Eag le Security Pvt. Ltd. All Rights Reserved.
             </p>
 
         </div>
 
     </footer>
 
+<div id="logoModal" class="logo-modal">
+    <span class="logo-close">&times;</span>
+    <img src="images/logo.png" alt="Alpha Eagle Security Logo">
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
