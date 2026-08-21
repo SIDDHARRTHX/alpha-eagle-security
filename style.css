@@ -90,9 +90,7 @@ body {
 .nav-links a:hover {
     color: #d4af37;
 }
-.nav-links a:last-child {
-    color: #2196f3 !important;
-}
+
 .menu-btn {
     display: none;
     border: none;
@@ -918,18 +916,20 @@ header.header .nav-links {
     margin-bottom: 6px !important;
 }
 
-#contact .contact-item span,
-#contact .contact-item a {
+#contact .contact-item span {
     color: #667085 !important;
     line-height: 1.6 !important;
 }
 
 #contact .contact-item a {
+    color: #0066ff !important;
+    line-height: 1.6 !important;
     text-decoration: none !important;
 }
 
 #contact .contact-item a:hover {
-    color: #d28d32 !important;
+    color: #0047b3 !important;
+    text-decoration: underline !important;
 }
 
 /* FORM CARD */
@@ -1325,3 +1325,57 @@ header.header .nav-links {
     .guard-next {
         right: 10px;
     }
+    
+    /* MOBILE NAVBAR FINAL FIX */
+
+/* MOBILE NAVBAR FIX */
+@media (max-width: 768px) {
+
+    .header .container.navbar {
+        position: relative !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+    }
+
+    .header .menu-btn {
+        display: block !important;
+        margin-left: auto !important;
+        z-index: 10001 !important;
+    }
+
+    .header.header .nav-links {
+        display: none !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+
+        flex-direction: column !important;
+        align-items: center !important;
+
+        margin: 0 !important;
+        padding: 10px 0 !important;
+
+        background: #061b33 !important;
+        border-bottom: 2px solid #d4af37 !important;
+        z-index: 10000 !important;
+    }
+
+    .header.header .nav-links.active {
+        display: flex !important;
+    }
+
+    .header .nav-links a {
+        display: block !important;
+        width: 100% !important;
+        padding: 13px 0 !important;
+
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .header .nav-links a:hover {
+        color: #d4af37 !important;
+    }
+}
